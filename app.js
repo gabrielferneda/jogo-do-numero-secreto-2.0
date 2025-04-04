@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = []; // lista vazia
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio(); // invoca a função gerarNumeroAleatorio
 let tentativas = 1;
 
@@ -11,7 +11,7 @@ function exibirTextoNaTela(tag, texto) { // função com parâmetros
 
 function exibirMensagemInicial() {
 exibirTextoNaTela("h1", "Jogo do Número Secreto"); // função com parâmetros é invocada para o h1
-exibirTextoNaTela("p", "Escolha um número entre 1 e 10"); // função com parâmetros é invocada para o p
+exibirTextoNaTela("p", "Escolha um número entre 1 e 100"); // função com parâmetros é invocada para o p
 }
 
 exibirMensagemInicial() // função para exibir as mensagem Inicial é invocada

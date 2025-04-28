@@ -4,7 +4,7 @@
  <p>Projeto utilizado nos cursos de lógica de programação da Alura. Jogo para o usuário descobrir um número sorteado aleatoriamente entre 1 e 100.</p>
 
  # 📁 Acesso ao projeto
-Para acessar o projeto e se divertir jogando, basta clicar no clicando no [link](https://jogo-bay-alpha.vercel.app/).
+Para acessar o projeto e se divertir jogando, basta clicar no [link](https://jogo-bay-alpha.vercel.app/).
 
  ## 🚀 Tecnologias
  <div>

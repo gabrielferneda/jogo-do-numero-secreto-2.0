@@ -20,9 +20,7 @@ function verificarChute() { // função sem parâmetros
     if (chute == numeroSecreto) {
         exibirTextoNaTela ("h1", "Parabéns, você acertou!")
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
-// O JS não reconhece uma Template String na função exibirTextonaTela - criamos uma variável mensagemTentativas para incluir a TS e jogamos essa variável no exibirTextoNaTela 
-        let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}`;
-        exibirTextoNaTela ("p", mensagemTentativas)
+        exibirTextoNaTela ("p", `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}`);
         document.getElementById("reiniciar").removeAttribute("disabled"); // seleciona uma tag pelo ID e remove um atributo
     } else if (chute > numeroSecreto) {
         exibirTextoNaTela ("p", "O número secreto é menor")
@@ -30,7 +28,7 @@ function verificarChute() { // função sem parâmetros
         exibirTextoNaTela("p", "O número secreto é maior")
     }
     tentativas++ // contador de tentativas
-    limparCampo(); // função é invocada para limpar o input quando o chute =! numero secreto
+    limparCampo(); // função é invocada para limpar o input quando o chute for =! numero secreto
 }
 
 function gerarNumeroAleatorio() { // função com retorno para gerar um número aleatório
@@ -51,7 +49,7 @@ function gerarNumeroAleatorio() { // função com retorno para gerar um número 
 }
 
 function limparCampo() { // função para limpar o input
-    chute = document.querySelector("input");
+    let chute = document.querySelector("input");
     chute.value = ""
 }
 

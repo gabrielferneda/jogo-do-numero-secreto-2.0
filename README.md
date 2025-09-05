@@ -1,4 +1,4 @@
-<h1>Jogo do número secreto</h1>
+<h1>Jogo do número secreto 2.0</h1>
  
  <h2>🔖 Sobre</h2>
  <p>Projeto utilizado nos cursos de lógica de programação da Alura. Jogo para o usuário descobrir um número sorteado aleatoriamente entre 1 e 100.</p>
